@@ -5,14 +5,12 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  const [notes, setNotes] = useState([
-    { title: "Note title", content: "Note content" },
-  ]);
+  const [notes, setNotes] = useState([]);
 
   function createNote(note) {
+    const newNotes = [];
     setNotes((prevNotes) => {
-      const newNotes = [];
-      newNotes.push(prevNotes);
+      newNotes.push(...prevNotes);
       newNotes.unshift({
         title: note.title,
         content: note.content,
