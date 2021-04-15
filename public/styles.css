@@ -100,3 +100,7 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
+.MuiFab-root {
+  background-color: none !important;
+}
