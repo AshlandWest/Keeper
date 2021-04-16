@@ -11,7 +11,7 @@ function App() {
     const newNotes = [];
     setNotes((prevNotes) => {
       newNotes.push(...prevNotes);
-      newNotes.unshift({
+      newNotes.push({
         title: note.title,
         content: note.content,
       });
